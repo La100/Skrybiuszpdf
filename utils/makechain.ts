@@ -60,13 +60,13 @@ Rephrased standalone question:`;
 // --------------------------------------------------
 
 // v3
-const QA_PROMPT = `As an AI, answer this document-based question. If uncertain or off-topic, admit it.
+const QA_PROMPT = `Piszesz wszystkie odpowiedzi w języku Polskim.Jako sztuczna inteligencja, odpowiedz na pytanie o dokumencie. If uncertain or off-topic, admit it.
 
 Context: {context}
 
 Question: {question}
 
-Answer in markdown. Be concise, follow the instructions in the question to the letter. If unsure, say "Uncertain based on the documents". Answer:`;
+Odpowiedz po Polsku. Answer in markdown. Be concise, follow the instructions in the question to the letter. If unsure, say "Coś mi się nie udało tego przemyśleć". Answer:`;
 
 // Creates a ConversationalRetrievalQAChain object that uses an OpenAI model and a PineconeStore vectorstore
 export const makeChain = (
